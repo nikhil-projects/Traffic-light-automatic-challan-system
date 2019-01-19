@@ -1,0 +1,687 @@
+	
+body
+{
+	background-color:#1b497a;
+	font-family: 'Oxygen', sans-serif;
+	letter-spacing: 1px;
+	
+}
+
+.font
+{
+	 font-family: 'Notable', sans-serif;
+}
+
+/*style for the Footerend page---------------*/
+.footerend
+{
+	width: 100%;
+	height: 150px;
+	margin-top: 15px;
+	background-color:black; 
+
+}
+/*style end---------------*/
+/*style for the today page---------------*/
+
+.adminpanal
+{
+	width: 100%;
+	height: 100px;
+	background-color: gray;
+	
+	margin-top: 50px;
+	display: flex;
+
+
+}
+.adminpanal a
+{
+	text-decoration: none;
+}
+.information
+{
+
+	width: 90%;
+	height: 240px;
+	border: none;
+	margin-left: 5%;
+	margin-top: 20px;
+	padding: 0;
+	border-radius: 0 25px 25px;
+}
+.information .info1
+{
+	width: 100%;
+	height: 40px;
+	background-color: orange;
+	border-radius: 0 25px 0 0; 
+		text-align: center;
+		border-bottom: 7px solid red;
+	border-top: 7px solid red;
+}
+.information .info1 span
+{
+  font-weight: bold;
+  font-size: 25px; 
+  text-decoration: none;
+  margin-top: 10px;
+
+  
+}
+
+.information .info2
+{
+	width: 100%;
+	height: 240px;
+	background-color: white;
+	  box-shadow: -25px 10px 25px rgba(0,0,0,0.6);
+}
+/* styel end...........======================*/
+
+/* style for the database............................ */
+
+
+.dbcontainer
+{
+	margin-top: 15px;
+	width: 100%;
+	height: 150px;
+	background-color: white;
+
+}
+.database
+{
+	width: 300px;
+	height: 100%;
+	background-color: #ed7401;
+	margin-top: -50px;
+	
+    float: right;
+}
+
+.database p
+{
+	
+	margin: 5px; 
+}
+.database .welcome
+{
+	background-color:#1b497a;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+.database button
+{
+	float: right;
+	margin: 0;
+	width: 100%;
+ 
+ height: 35px;
+}
+
+.database1 input
+{
+    width: 150px;
+	height: 35px;
+	background-color: transparent;
+	border-radius: 0 0 15px;
+	color: black;
+	font-weight: bold;
+	box-shadow: 2px solid green;
+	border-left: 7px solid #ed7401 ;
+	border-top: 5px solid #1b497a ;
+	border-bottom: 5px solid #1b497a ;
+	border-right: 5px solid #ed7401 ;
+	margin-top:  15px;
+	margin-left:25px ;
+	outline: none;
+	box-shadow: -20px 0 15px  rgba(0,0,0,0.4); 
+}
+
+.database1 input:hover
+{
+	transition-delay: 0.1s;
+	color: #white;
+    background-color:#ed7401 ; 
+    border-left: 7px solid #ed7401 ;
+    border-radius: 15px 0  0;
+	border-top: 5px solid #1b497a ;
+	border-bottom: 5px solid #1b497a  ;
+	border-right: 5px solid #1b497a ;
+	cursor: pointer;
+	box-sizing: border-box;
+	outline: none;
+
+
+
+}
+/* style end------------------------*/
+.table_container
+{
+	
+	
+	margin-top: 40px;
+	margin-left: 150px; 
+	width: 1000px;
+	height: 1200px;
+	background: white;
+	border-radius: 0 25px 0 0;
+	box-shadow: -15px 5px 15px rgba(0,0,0,0.5);
+}
+.table_container .info
+{
+	width: 100%;
+	height: 40px;
+	background-color: orange;
+	border-radius: 0 25px 0 0; 
+		text-align: center;
+		border-bottom: 7px solid red;
+	border-top: 7px solid red;
+	text-decoration: none;
+}
+.table_container .info span
+{
+  font-weight: bold;
+  font-size: 25px; 
+  text-decoration: none;
+  margin-top: 10px;
+
+  
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.header
+{
+
+	
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	width: 55%;
+	height:50px;
+	border-radius: 100px 0 100px;
+	
+	margin-left:22%;
+	flood-color: green;
+	
+	position:sticky;
+	top:10px; 
+
+	box-shadow: -26px 0px 15px  rgba(0,0,0,0.6);
+	 animation: rohit 2s;
+	 transition: 0.3s;
+
+
+}
+@keyframes rohit
+{
+  0%
+  {
+  	width:10%;
+  	height:150px;
+  	margin-left:-6%;
+  }
+  30% 40%
+  {
+  	width:40%;
+  	height:100px;
+  	margin-left:0%;
+  }
+  40% 50%
+  {
+  	width: 50%;
+  	height:70px;
+  	margin-left:6%;
+  }
+  50% 70%
+  {
+  	width: 40%;
+  	height:60px;
+  	margin-left:10%;
+  }
+ 70% 100%
+  {
+  	width: 55%;
+  	height:50px;
+  	margin-left:22%;
+  }
+}
+
+
+
+.template
+{
+  width: 100%;
+  height: 450px;
+  background-image:url(photo2.jpg);
+  margin-top:-22px;
+  color: white;
+  text-align: center;
+}
+.temp1
+{
+	position: absolute;
+  margin-top: 150px;
+  margin-left: 200px;
+  font-size: 40px;
+  color: #FFC300  ;
+
+}
+.template2
+{
+  width: 100%;
+  height: 250px;
+  background-image:url(register.png);
+  margin-top:-22px;
+  color: white;
+}
+.template1
+{
+  width: 100%;
+  height: 250px;
+  background-image:url(register.png);
+  margin-top:-22px;
+  color: white;
+}
+.listul
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+   
+}
+.listli
+{
+	list-style: none;
+	margin-left:25px;
+    display: block;
+    margin-top:10px;
+    
+    padding: 5px;
+
+
+}
+ul li a
+{
+
+text-decoration: none;
+color: white;
+letter-spacing: 0px;
+
+font-size: 17px;
+font-family: Candara;
+
+}
+
+ul li a:hover
+{
+	color: #1b497a;
+	text-shadow: -15px 0px 15px rgba(0,0,0,0.6);
+
+}
+.aboutus
+{
+	background-color: transparent;
+	display: flex;
+	
+	width: 100%;
+	min-width: 200px;
+	height:350px;
+	margin-left: 0; 
+	margin-bottom: 10px;
+flex-wrap: wrap;
+
+
+
+}
+.about1
+{ margin: 15px;
+	margin-right: 10px;
+	width: 590px;
+	height:300px;
+	padding: 15px;
+	min-width: 50px;
+    overflow: hidden;
+	background-color: #ed7401	;
+   
+	font-family: 'Oxygen', sans-serif;
+
+
+}
+.about1 p
+{
+	color: white;
+	padding: 3px;
+	margin:10px; 
+	
+	padding: 15px; 
+}
+span
+{
+	color: white;
+	font-size: 2em;
+    font-weight: bold;
+    margin-left: 25px; 
+    text-decoration: underline;
+
+}
+.about2
+{
+	width: 300px;
+	height: 300px;
+	margin-right:10px ;
+	margin-top:15px;  
+	background-color: rgba(24, 42, 62 ,0.9);
+	border-radius:2px;
+	padding: 15px;
+	overflow: hidden;
+}
+.around
+{
+	float: left;
+	color: red;
+	width: 150px;
+	height: 15px;
+}
+fieldset
+{
+	margin:10px;
+	width: 250px;
+	min-width: 100px;
+	border-radius: 0 0 15px;
+
+}
+legend
+{
+	color: #ed7401 ;
+	font-weight: bold;
+	font-size: 1em;
+}
+.admin input
+{
+	width: 150px;
+	height: 35px;
+	background-color: transparent;
+	border-radius: 0 0 15px;
+	color: white;
+	box-shadow: 2px solid green;
+	border-left: 7px solid #ed7401 ;
+	border-top: 5px solid #1b497a ;
+	border-bottom: 5px solid #1b497a ;
+	border-right: 5px solid #ed7401 ;
+	margin-top:  15px;
+	margin-left:25px ;
+	outline: none;
+	box-shadow: -20px 0 15px  rgba(0,0,0,0.4); 
+
+
+}
+.newsli
+{
+	color: white;
+	list-style: none;
+	cursor: pointer;
+	
+	line-height: 35px;
+     
+}
+.newsli:hover
+{
+   color:  #ed7401 ;
+   text-decoration: underline;
+}
+
+.admin input:hover
+{
+	transition-delay: 0.1s;
+	color: #white;
+    background-color:#ed7401 ; 
+    border-left: 7px solid #ed7401 ;
+    border-radius: 15px 0  0;
+	border-top: 5px solid #1b497a ;
+	border-bottom: 5px solid #1b497a  ;
+	border-right: 5px solid #1b497a ;
+	cursor: pointer;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.footer
+{
+    width: 100%;
+	height: 300px;
+	margin-right:10px ;
+	
+	background-color: #ed7401 ;
+	border-radius:2px;
+	overflow: hidden;
+     display: flex;
+     flex-wrap: wrap;
+	padding: 15px; 
+}
+.shape p
+{
+	
+	color: white;
+	padding: 3px;
+	margin:10px; 
+	
+	padding: 15px; 
+	float: left;	
+
+}
+.project
+{
+	color: #1b497a;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.fa
+{
+	background-color: transparent;
+	color: #ed7401;
+
+	box-shadow: -10px 0 15px  rgba(0,0,0,0.7);
+}
+
+
+
+@media only screen and (max-width:600px) 
+{
+    
+    .header
+    {
+    	height: 230px;
+    	width: 200px;
+    	margin: 0;
+    	position: absolute;
+
+
+    }
+    .listli{
+          
+           margin-left: 1px ;
+           list-style: disc;
+           
+    }
+  
+  
+  
+}
+
+
+/*design for the registeration page---------- ------------------------------------*/
+#parent
+{
+	width: 100%;
+}
+.form
+{
+	margin-top:15px; 
+	width: 850px;
+	height: 96%;
+	background-color: rgba(0, 0, 0 ,0.7);
+	border-radius:  0 15px 0 15px;
+	vertical-align: all;
+	padding: 25px;
+	float: left;
+	margin-bottom: 25px;
+}
+
+.form fieldset{
+	width: 750px;
+	border-radius: 0px;
+	padding: 40px;
+}
+
+.form input
+{
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  border:none;
+  border-bottom:4px solid #ed7401;
+  color: green;
+  outline: none;
+  font-size: 15px; 
+  padding-left:10px;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  border-radius: 0  0 15px 5px;
+ 
+}
+.form input:focus
+{
+	border-bottom: 3px solid red;
+	
+	
+}
+.name input
+{
+	width: 42%;
+	margin-left: 9px;
+	margin-bottom: 15px;
+}
+
+.father input
+{
+	width: 80%;
+}
+.radio input
+{
+	margin-right: -40px ;
+	width: 15px;
+	height: 15px;
+}
+.radio span
+{
+	font-size: 14px;
+	text-decoration: none;
+	margin-right: 15px;
+	margin-left: 150px;
+}
+label
+{
+	color: white;
+	font-size: 18px;
+	margin-right: 35px;
+
+}
+select
+{
+	width: 60px;
+  height: 35px;
+  margin-right: 15px;
+  background-color: blue;
+  border:none;
+  border:2px solid white;
+  color: white;
+  font-size: 15px; 
+  margin-left:13px; 
+  padding-left:10px;
+  background-color: rgba(0, 0,0,0);
+}
+option
+{
+	color: green;
+}
+
+button
+{
+	color: green;
+	background-color: white;
+	width: 150px;
+	height: 50px;
+}
+@media only screen and (max-width:600px) 
+{
+	.form input
+	{
+		width: 150px;
+		height: 25px;
+	}
+	label
+	{
+		font-size:12px;
+	}
+	
+	.father input
+    {
+	width: 150px;
+   }
+  
+     .radio input
+{
+	margin-right: -10px ;
+	width: 5px;
+	height: 5px;
+}
+.radio span
+{
+	font-size: 14px;
+	text-decoration: none;
+	margin-right: 5px;
+	
+}
+.radio
+{
+	margin:0;
+}
+}
+
+.details
+{
+	width:400px;
+	height: 800px;
+	float: right;
+	margin-right: 0;
+	background-color: #ed7401;
+}
+.output
+{
+	width: 100%;
+	height: 50px;
+	background-color: #1b497a;
+	color: white;
+	margin-right: 10px;
+	padding: 15px;
+}
+/*-----------------end-------------------------------------------------------------*/
+
+/** new page ................................*/
+.headernew
+{
+	width: 
+}
+/*end ./////////////////////////////////*/

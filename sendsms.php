@@ -1,0 +1,115 @@
+<?php 
+  session_start(); 
+$sms = "You Are Not Followed the rule of Red Light Signals E-challan Of amount Rs. 500  is issued Through IOT were for RED light Jumping.";
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: Manager.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: Manager.php");
+  }
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Today Report</title>
+
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" type="text/css" href="table.css">
+  <link rel="stylesheet" type="text/css" href="styleiot.css">
+<style type="text/css">
+.parent2
+{
+  width: 100%;
+  background-color:black ;
+ display: flex;
+}
+.form1
+{
+  margin-left: 50px;
+  width: 320px;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.3);
+}
+.form1 input
+{
+  width: 250px;
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+.form1 button
+{
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  float: right;
+}
+fieldset
+{
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+  <?php include("header.php");?>
+ 
+<?php include("tableconnection.php");?>
+
+<?php include("userlogin.php");?>
+
+       
+
+          <div class="parent2">
+<div class="form1">
+    <form method="POST" action="#">             
+<fieldset>
+  <legend>SEND SMS TO DRIVER</legend>
+  <label>Driver Number</label><input type="tel" name="userMobile"  id="number"  placeholder="Driver Phone Number" pattern="[6789][0-9]{9}" required/><br>
+  <label>Message</label><input type="text" value="<?php echo $sms; ?>" name="userMessage"  id="textMessage" placeholder="Message is predefined,in data base"required/><br>
+  <button type="submit" name="SubmitButton" id="btnSend">Send</button>
+</fieldset> 
+                </form>
+              </div></div>
+        
+</body>
+</html>
+
+<?php 
+
+if(isset($_POST['SubmitButton']))
+{
+
+$textMessage=$_POST["userMessage"];
+$mobileNumber=$_POST["userMobile"];
+$apiKey = urlencode('your key');
+   
+   // Message details
+   $numbers = array($mobileNumber);
+   $sender = urlencode('TXTLCL');
+   $message = rawurlencode($textMessage);
+
+   $numbers = implode(',', $numbers);
+
+   // Prepare data for POST request
+   $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
+
+   // Send the POST request with cURL
+   $ch = curl_init('https://api.textlocal.in/send/');
+   curl_setopt($ch, CURLOPT_POST, true);
+   curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+   $response = curl_exec($ch);
+   curl_close($ch);   
+   // Process your response here
+   echo $response;
+}    
+?>
